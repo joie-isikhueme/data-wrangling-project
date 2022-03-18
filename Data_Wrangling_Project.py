@@ -44,6 +44,3 @@ plt.legend(title= "Countries:",loc=2, prop={'size':6,},bbox_to_anchor =(-0.38,0.
 plt.ylabel("")
 plt.title("Top 10 Countries With Highest Road Deaths(2018)",x=0.4,y=1.1)
 plt.show()
-mylabels
-highestdeath
-plt.scatter('Total Road Deaths','Population in thousands',data=highestdeath)
