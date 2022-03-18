@@ -18,13 +18,12 @@ df.columns=[
             'Number of Seriously Injured'
             ]
 df.drop(['Number of People Killed per Billion',
-        'Number of Seriously Injured'],axis=1, 
+        'Number of Seriously Injured','Road Network Length'],axis=1, 
         inplace=True)
 
 df['Year']="2018"
 
 df['GDP per Capita']=df['GDP per Capita'].str.replace(r'[^\d]+','')
-df['Road Network Length']=df['Road Network Length'].str.replace(r'[^\d]+','')
 
 
 df= df.sort_values("Road deaths per Million")
